@@ -11,11 +11,11 @@
 		function secondHighest(arr) {
 			//Write your code here
 			arr.sort(function(a,b){return a-b})
-			let n=arr.length
+			let n=arr.length   
 			if(arr.length<=1)
-				return "-Infinity"			
+				return -Infinity			
 			else if(arr[n-2]==arr[0] && arr[n-2]==arr[n-1])
-				return "-Infinity"
+				return -Infinity
 			else
 				return arr[n-2]
 			
